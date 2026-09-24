@@ -1,3 +1,4 @@
+// Jenkins pipeline stages - feature branch
 pipeline {
     agent any
 
