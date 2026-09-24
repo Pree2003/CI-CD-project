@@ -1,4 +1,3 @@
-// Jenkins pipeline stages - feature branch
 pipeline {
     agent any
 
@@ -15,6 +14,30 @@ pipeline {
             steps {
                 script {
                     sh 'echo "Testing Stage"'
+                }
+            }
+        }
+
+        stage('Package') {
+            steps {
+                script {
+                    sh 'echo "Packaging Stage"'
+                }
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    sh 'echo "Deploying Stage"'
+                }
+            }
+        }
+
+        stage('Clean up') {
+            steps {
+                script {
+                    sh 'echo "Cleaning Up Stage"'
                 }
             }
         }
